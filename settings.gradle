@@ -1,0 +1,3 @@
+include ':javalib'
+rootProject.name='Rehabilitation'
+include ':app'

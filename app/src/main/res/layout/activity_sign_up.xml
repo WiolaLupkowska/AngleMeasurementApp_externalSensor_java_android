@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF1FA"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+            >
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="156dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center"
+
+            app:srcCompat="@drawable/logo"></ImageView>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/lato"
+        android:text="Rejestracja"
+        android:textColor="#A4000000"
+        android:textSize="20dp"
+        android:transitionName="logo_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            boxBackgroundColor = "#FFFFFF"
+            android:layout_width="240dp"
+            android:layout_height="55dp"
+            app:boxBackgroundColor="@drawable/edit_text_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="imię i nazwisko">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FFFFFF"
+                android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="240dp"
+            app:boxBackgroundColor="@drawable/edit_text_background"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="login">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="240dp"
+            android:layout_height="55dp"
+            app:boxBackgroundColor="@drawable/edit_text_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="numer telefonu">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="240dp"
+            android:layout_height="55dp"
+            app:boxBackgroundColor="@drawable/edit_text_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="240dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@drawable/edit_text_background"
+            android:hint="hasło"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/lato"
+        android:onClick="onClickBtnRejestracja"
+        android:text="ZACZYNAJMY"></Button>
+
+</LinearLayout>
